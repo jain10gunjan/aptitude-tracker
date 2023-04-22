@@ -9,11 +9,6 @@ function Percentage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [userResponses, setUserResponses] = useState({});
-  const [className1, setClassName1] = useState('');
-const [className2, setClassName2] = useState('');
-const [className3, setClassName3] = useState('');
-const [className4, setClassName4] = useState('');
-const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -45,18 +40,7 @@ const [open, setOpen] = useState(false);
     setSearchTerm(event.target.value);
   };
 
-  const handleOptionChange = (event, questionIndex) => {
-    const selectedOption = event.target.value;
-    const updatedQuestions = [...questions];
-    const updatedQuestion = { ...updatedQuestions[questionIndex] };
-    updatedQuestion.selectedOption = selectedOption;
-    updatedQuestions[questionIndex] = updatedQuestion;
-    setQuestions(updatedQuestions);
-
-    const updatedResponses = { ...userResponses };
-    updatedResponses[questionIndex] = selectedOption;
-    setUserResponses(updatedResponses);
-  };
+  
 
   useEffect(() => {
     const storedResponses = JSON.parse(localStorage.getItem('userResponses'));
@@ -112,7 +96,7 @@ const [open, setOpen] = useState(false);
         {question.question}                                      
         </div> 
             <div class="optionscontainer">
-<div className={className1} onClick={()=>{
+<div  onClick={()=>{
   
   if(String.fromCharCode(65 + 0) === question.answer){
     
@@ -121,30 +105,24 @@ const [open, setOpen] = useState(false);
     
     toast.error('wrong option');
 }
-                            {/*if(String.fromCharCode(65 + Object.keys(percentageData[qid].options).indexOf(percentageData[qid].answer)) === percentageData[qid].answer){
-                                setClassName1('correct')
-                                toast.success('correct option');
-                            }else{
-                                setClassName1('wrong')
-                                toast.success('wrong option');
-                            }*/}
+                            
 
                            }}>{question.options[String.fromCharCode(65 + 0)]}</div>
-                           <div className={className2} onClick={()=>{
+                           <div  onClick={()=>{
   if(String.fromCharCode(65 + 1) === question.answer){
     toast.success('correct option');
 }else{
     toast.error('wrong option');
 }}}>{question.options[String.fromCharCode(65 + 1)]}</div>
 
-<div className={className3} onClick={()=>{
+<div  onClick={()=>{
   if(String.fromCharCode(65 + 2) === question.answer){
     toast.success('correct option');
 }else{
     toast.error('wrong option');
 }}}>{question.options[String.fromCharCode(65 + 2)]}</div>
 
-<div className={className4} onClick={()=>{
+<div  onClick={()=>{
   if(String.fromCharCode(65 + 3) === question.answer){
     toast.success('correct option');
 }else{
