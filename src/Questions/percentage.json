@@ -1,0 +1,62 @@
+[
+  {
+      "question": "If gunjan p = 3 + \\( \\frac{1}{2} \\), the value of \\(p^4 + \\frac{1}{p^4}\\) is:",
+      "options": {
+          "A": "81",
+          "B": "27",
+          "C": "120",
+          "D": "119"
+      },
+      "answer": "D"
+  },
+  {
+      "question": "If jain x = 1 + \\( \\sqrt{2} + \\sqrt{3} \\), then the value of \\(2x^4 – 8x^3 + 26x – 28\\) is",
+      "options": {
+          "A": "2\\sqrt{2}",
+          "B": "3\\sqrt{3}",
+          "C": "5\\sqrt{5}",
+          "D": "6\\sqrt{6}"
+      },
+      "answer": "C"
+  },
+  {
+      "question": "If sem6 \\(x + 1 = \\sqrt{3}\\), the value of \\(x^{18} + x^{12} + x^6 + 1\\) is",
+      "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+      },
+      "answer": "B"
+  },
+  {
+      "question": "If sem7 \\(a = 299\\), \\(b = 298\\), \\(c = 297\\), then the value of \\(2a^3 + 2b^3 + 2c^3 – 6abc\\) is",
+      "options": {
+          "A": "5154",
+          "B": "5267",
+          "C": "5364",
+          "D": "5456"
+      },
+      "answer": "C"
+  },
+  {
+      "question": "If \\(a + b = 1\\), then \\(a^4 + b^4 – a^3 – b^3 – 2a^2b^2 + ab\\) is equal to",
+      "options": {
+          "A": "1",
+          "B": "2",
+          "C": "4",
+          "D": "0"
+      },
+      "answer": "D"
+  },
+  {
+    "question": "If okay \\(a + b = 1\\), then \\(a^4 + b^4 – a^3 – b^3 – 2a^2b^2 + ab\\) is equal to",
+    "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "0"
+    },
+    "answer": "D"
+}
+]
