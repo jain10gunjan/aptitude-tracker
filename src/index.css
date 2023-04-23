@@ -41,7 +41,7 @@ code {
   margin-bottom: 20px;
   }
   .optionscontainer div{
-  background-color: #ccc;
+  background-color: #ececec;
   font-size: 16px;
   color: black;
   margin-bottom: 10px;
@@ -58,9 +58,15 @@ code {
   z-index: 1;
   color: white;
   }
+  
   .answercontainer{
   line-height:3;
   }
+
+  .optionscontainer div:hover{
+    background-color: #ccc;
+  }
+
   .optionscontainer div.correct::before {
   content:'';
   position: absolute;

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import percentageData from '../Questions/percentage.json';
+import percentageData from '../Questions/quadraticequations.json';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import Pagination from '../Pagination';
+import { MathJax, MathJaxContext } from "better-react-mathjax";
 
 
 function Percentage() {
@@ -144,7 +145,7 @@ useEffect(() => {
                 <div>
 
                 
-
+                <MathJaxContext>
                 {filteredQuestions.map((question, index) => (
           <div key={question.id}>
             <div class="quiz-container">
@@ -152,7 +153,7 @@ useEffect(() => {
         <p class="text-sm text-gray-300">Physics | JEE Mains 2022 | 24 - June Shift - 1  <br/> Chapter : Work, Energy and Power | Topic : Work Done by a Variable Force </p>                
         </div>                
         <div class="questioncontainer">                     
-        {question.question}                                      
+        <MathJax>{question.question}</MathJax>                                    
         </div> 
             <div class="optionscontainer">
 <div className={className1} onClick={()=>{
@@ -172,7 +173,7 @@ useEffect(() => {
                                 toast.success('wrong option');
                             }*/}
 
-                           }}>{question.options[String.fromCharCode(65 + 0)]}</div>
+                           }}><MathJax>{question.options[String.fromCharCode(65 + 0)]}</MathJax></div>
                            <div className={className2} onClick={()=>{
   if(String.fromCharCode(65 + 1) === question.answer){
     setClassName2('correct')
@@ -180,7 +181,7 @@ useEffect(() => {
 }else{
     setClassName2('wrong')
     toast.error('wrong option');
-}}}>{question.options[String.fromCharCode(65 + 1)]}</div>
+}}}><MathJax>{question.options[String.fromCharCode(65 + 1)]}</MathJax></div>
 
 <div className={className3} onClick={()=>{
   if(String.fromCharCode(65 + 2) === question.answer){
@@ -189,7 +190,7 @@ useEffect(() => {
 }else{
     setClassName3('wrong')
     toast.error('wrong option');
-}}}>{question.options[String.fromCharCode(65 + 2)]}</div>
+}}}><MathJax>{question.options[String.fromCharCode(65 + 2)]}</MathJax></div>
 
 <div className={className4} onClick={()=>{
   if(String.fromCharCode(65 + 3) === question.answer){
@@ -198,12 +199,13 @@ useEffect(() => {
 }else{
     setClassName4('wrong')
     toast.error('wrong option');
-}}}>{question.options[String.fromCharCode(65 + 3)]}</div>
+}}}><MathJax>{question.options[String.fromCharCode(65 + 3)]}</MathJax></div>
                            </div>
                            
 </div>
           </div>
         ))}
+        </MathJaxContext>
           </div>
       
       </div>

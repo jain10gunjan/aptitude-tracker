@@ -2,7 +2,8 @@ import React,{useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
 import percentageData from '../Questions/percentage.json';
 import toast, { Toaster } from 'react-hot-toast';
-
+import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,22 +43,30 @@ useEffect(() => {
 
 
 
-const {qid} = useParams()
+let {qid} = useParams()
+let x = Math.floor((Math.random() * 10) + 1);
+let q1 = x;
+let q2 = x+1;
+let q3 = x+2;
+let q4 = x+3;
+let q5 = x+4;
+let q6 = x+5;
+
   return (
     <>
-    <div>PercentageQ</div>
-    <p> {qid} </p>
-    <p>{percentageData[qid].question}</p>
-    <p>{percentageData[qid].options[String.fromCharCode(65 + 0)]}</p>
-    <p>{percentageData[qid].options[String.fromCharCode(65 + 1)]}</p>
-    <p>{percentageData[qid].options[String.fromCharCode(65 + 2)]}</p>
-    <p>{percentageData[qid].options[String.fromCharCode(65 + 3)]}</p>
+    
 
-  
-    {console.log(percentageData[qid].answer)}
-{console.log('index checking....'  + String.fromCharCode(65 + Object.keys(percentageData[qid].options).indexOf(percentageData[qid].answer)))}
+    <Navbar/>
 
-    <div class="quiz-container">
+    
+
+
+                                
+
+
+<div class="flex flex-wrap mt-4 mx-2 mb-8">
+      <div class="w-full md:w-2/3 lg:w-3/4 px-2 mb-4">
+      <div class="max-h-screen max-w-full p-8">
         <div class="question-numbercontainer"> 
         <p class="text-sm text-gray-300">Physics | JEE Mains 2022 | 24 - June Shift - 1  <br/> Chapter : Work, Energy and Power | Topic : Work Done by a Variable Force </p>                
         </div>                
@@ -67,40 +76,32 @@ const {qid} = useParams()
         <div class="optionscontainer">
 
 
-                           <div className={className1} onClick={()=>{
+                           <div onClick={()=>{
                             if(String.fromCharCode(65 + 0) === percentageData[qid].correct_option){
-                                setClassName1('correct')
                                 toast.success('correct option');
                             }else{
-                                setClassName1('wrong')
-                                toast.success('wrong option');
+                                toast.error('wrong option');
                             }
                            }}>{percentageData[qid].options[String.fromCharCode(65 + 0)]}</div>                    
-                           <div className={className2} onClick={()=>{
+                           <div onClick={()=>{
                             if(String.fromCharCode(65 + 1) === percentageData[qid].correct_option){
-                                setClassName2('correct')
                                 toast.success('correct option');
                             }else{
-                                setClassName2('wrong')
-                                toast.success('wrong option');
+                                toast.error('wrong option');
                             }
                            }}>{percentageData[qid].options[String.fromCharCode(65 + 1)]}</div>                    
-                           <div className={className3} onClick={()=>{
+                           <div  onClick={()=>{
                             if(String.fromCharCode(65 + 2) === percentageData[qid].correct_option){
-                                setClassName3('correct')
                                 toast.success('correct option');
                             }else{
-                                setClassName3('wrong')
-                                toast.success('wrong option');
+                                toast.error('wrong option');
                             }
                            }}>{percentageData[qid].options[String.fromCharCode(65 + 2)]}</div>                    
-                           <div className={className4} onClick={()=>{
+                           <div  onClick={()=>{
                             if(String.fromCharCode(65 + 3) === percentageData[qid].correct_option){
-                                setClassName4('correct')
                                 toast.success('correct option');
                             }else{
-                                setClassName4('wrong')
-                                toast.success('wrong option');
+                                toast.error('wrong option');
                             }
                            }}>{percentageData[qid].options[String.fromCharCode(65 + 3)]}</div>                    
                                      
@@ -109,6 +110,45 @@ const {qid} = useParams()
                                 </div>              
                                 <div class="questioncontainer answercontainer">{percentageData[qid].solution}  </div>                                
                                 </div>
+      </div>
+      <div class="w-full md:w-1/3 lg:w-1/4 px-2 mb-4">
+      <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Related Questions</h2>
+          <Link to={'/percentage/questions/' + q1} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+        {x}: {percentageData[x].question}
+        {x}                                      
+            </p></Link><br/>
+
+            <Link to={'/percentage/questions/' + q2} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+        {x+1}: {percentageData[x+1].question}
+        {x}                                      
+            </p></Link><br/>
+
+            <Link to={'/percentage/questions/' + q3} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+        {x+2}: {percentageData[x+2].question}
+        {x}                                      
+            </p></Link><br/>
+
+
+            <Link to={'/percentage/questions/' + q4} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+        {x+3}: {percentageData[x+3].question}
+        {x}                                      
+            </p></Link><br/>
+
+
+            <Link to={'/percentage/questions/' + q5} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+        {x+4}: {percentageData[x+4].question}
+        {x}                                      
+            </p></Link><br/>
+
+            <Link to={'/percentage/questions/' + q6} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+        {x+5}: {percentageData[x+5].question}
+        {x}                                      
+            </p></Link><br/>
+            
+        </div>
+      </div>
+   </div>
                                 <Toaster/>
     </>
   )
