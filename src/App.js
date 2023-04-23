@@ -154,7 +154,7 @@ function App() {
 
       <div class="ml-4">
         <h2 class="font-semibold">Quadratic Equation</h2>
-        <Link to='/quadratic-equations'><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
+        <Link to='/quadratic-equations' target="_blank"><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
       </div>
     </div>
     <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
