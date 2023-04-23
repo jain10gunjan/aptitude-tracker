@@ -13,7 +13,7 @@ function QuadraticEquation() {
   useEffect(() => {
     const script = document.createElement('script');
     script.src =
-      'https://www.hostmath.com/Math/MathJax.js?config=OK';
+      'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML';
     script.async = true;
     document.body.appendChild(script);
 
