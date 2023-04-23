@@ -1,0 +1,3 @@
+[submodule "aptitude-tracker"]
+	path = aptitude-tracker
+	url = https://github.com/jain10gunjan/aptitude-tracker.git
