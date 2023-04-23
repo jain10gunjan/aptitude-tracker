@@ -14,7 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
       <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/percentage" element={<Percentage />} />
+      <Route path="/arrays" element={<Percentage />} />
       <Route path="/percentage/questions/:qid" element={<PercentageQ />} />
       </Routes>
     </BrowserRouter>,
