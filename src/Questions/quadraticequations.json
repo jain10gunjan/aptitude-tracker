@@ -1,0 +1,49 @@
+[
+    {
+        "question": "The selling price and cost price of an article differs by 480. What is the selling price in case the profit percentage is 20%?",
+        "options": {
+            "A": "2400",
+            "B": "2880",
+            "C": "2600",
+            "D": "2000"
+        },
+        "correct_option": "B",
+        "solution": "SP - CP = 480\n\\(1.2x - x = 480\\)\n\\(\\Rightarrow0.2x = 480\\)\n\\(\\Rightarrowx = 2400\\)\n\nSo selling price SP = 2400 + 480 = 2880"
+    },
+    {
+        "question": "Which of the following equations is a quadratic?",
+        "options": {
+            "A": "\\(x^3 - x^2 - x + 5 = 0\\)",
+            "B": "\\(x^4 - 10\\)",
+            "C": "\\(7x^2 = 49\\)",
+            "D": "\\(x^4 - x^3 = 9000\\)",
+            "E": "None of the above"
+        },
+        "correct_option": "C",
+        "solution": "Clearly, \\(7x^2 = 49\\) or \\(7x^2 - 49 = 0\\), which is of the form \\(ax^2 + bx + c = 0\\), where \\(b = 0\\).\nThus, \\(7x^2 - 49 = 0\\) is a quadratic equation."
+    },
+    {
+        "question": "Which of the following equations has real roots?",
+        "options": {
+            "A": "\\(2x^2 - 3x + 4 = 0\\)",
+            "B": "\\((x - 1)(2x - 5) = 0\\)",
+            "C": "\\(3x^2 + 4x + 5 = 0\\)",
+            "D": "Cannot be determined",
+            "E": "None of the above"
+        },
+        "correct_option": "B",
+        "solution": "\\((x - 1)(2x - 5) = 0 \\Rightarrow x = 1, \\frac{5}{2}\\)\nSo, its roots are real."
+    },
+    {
+        "question": "Find the roots of the equation \\(2x^2 - 9x - 18 = 0\\).",
+        "options": {
+            "A": "\\(\\frac{3}{2}\\) and 6",
+            "B": "\\(-\\frac{3}{2}\\) and \\(-6\\)",
+            "C": "\\(-\\frac{3}{2}\\) and 6",
+            "D": "\\(\\frac{3}{2}\\) and \\(-6\\)",
+            "E": "None of the above"
+        },
+        "correct_option": "C",
+        "solution": "Given equation is \\(2x^2 - 9x - 18 = 0\\)\n[by factorisation method]\n\\(\\Rightarrow 2x^2 - 12x + 3x - 18 = 0\\)\n\\(\\Rightarrow 2x(x - 6) + 3(x - 6) = 0\\)\n\\(\\Rightarrow (2x + 3)(x - 6)\\)"
+    }
+]

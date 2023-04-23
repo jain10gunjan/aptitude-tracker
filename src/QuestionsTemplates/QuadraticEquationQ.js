@@ -1,12 +1,12 @@
 import React,{useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
-import percentageData from '../Questions/percentage.json';
+import percentageData from '../Questions/quadraticequations.json';
 import toast, { Toaster } from 'react-hot-toast';
 
 
 
 
-const PercentageQ = () => {
+const QuadraticEquationQ = () => {
 const [className1, setClassName1] = useState('');
 const [className2, setClassName2] = useState('');
 const [className3, setClassName3] = useState('');
@@ -114,4 +114,4 @@ const {qid} = useParams()
   )
 }
 
-export default PercentageQ
+export default QuadraticEquationQ

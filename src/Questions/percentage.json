@@ -1,62 +1,321 @@
 [
-  {
-      "question": "If gunjan p = 3 + \\( \\frac{1}{2} \\), the value of \\(p^4 + \\frac{1}{p^4}\\) is:",
-      "options": {
-          "A": "81",
-          "B": "27",
-          "C": "120",
-          "D": "119"
-      },
-      "answer": "D"
-  },
-  {
-      "question": "If jain x = 1 + \\( \\sqrt{2} + \\sqrt{3} \\), then the value of \\(2x^4 – 8x^3 + 26x – 28\\) is",
-      "options": {
-          "A": "2\\sqrt{2}",
-          "B": "3\\sqrt{3}",
-          "C": "5\\sqrt{5}",
-          "D": "6\\sqrt{6}"
-      },
-      "answer": "C"
-  },
-  {
-      "question": "If sem6 \\(x + 1 = \\sqrt{3}\\), the value of \\(x^{18} + x^{12} + x^6 + 1\\) is",
-      "options": {
-          "A": "0",
-          "B": "1",
-          "C": "2",
-          "D": "3"
-      },
-      "answer": "B"
-  },
-  {
-      "question": "If sem7 \\(a = 299\\), \\(b = 298\\), \\(c = 297\\), then the value of \\(2a^3 + 2b^3 + 2c^3 – 6abc\\) is",
-      "options": {
-          "A": "5154",
-          "B": "5267",
-          "C": "5364",
-          "D": "5456"
-      },
-      "answer": "C"
-  },
-  {
-      "question": "If \\(a + b = 1\\), then \\(a^4 + b^4 – a^3 – b^3 – 2a^2b^2 + ab\\) is equal to",
-      "options": {
-          "A": "1",
-          "B": "2",
-          "C": "4",
-          "D": "0"
-      },
-      "answer": "D"
-  },
-  {
-    "question": "If okay \\(a + b = 1\\), then \\(a^4 + b^4 – a^3 – b^3 – 2a^2b^2 + ab\\) is equal to",
-    "options": {
-        "A": "1",
-        "B": "2",
-        "C": "4",
-        "D": "0"
+    {
+        "question": "The selling price and cost price of an article differs by 480. What is the selling price in case the profit percentage is 20%?",
+        "options": {
+            "A": "2400",
+            "B": "2880",
+            "C": "2600",
+            "D": "2000"
+        },
+        "correct_option": "B",
+        "solution": "SP - CP = 480\n1.2x - x = 480\n⇒0.2x = 480\n⇒x = 2400\n\nSo selling price SP = 2400 + 480 = 2880"
     },
-    "answer": "D"
-}
+    {
+        "question": "If a person sells a wooden furniture at 8% profit against 8% loss, then he could had earned Rs12 more. What is the cost price of furniture?",
+        "options": {
+            "A": "72",
+            "B": "70",
+            "C": "80",
+            "D": "75"
+        },
+        "correct_option": "D",
+        "solution": "Let Cost Price (CP) = x\nThen Selling Price(SP) if he sells at profit = x(1+8%) = 1.08x\nand SP, if he sells at loss = x(1-8%) = 0.92%\nGiven, 1.08%-0.92% = Rs12\n0.16x = Rs.12\n⇒x = Rs.75"
+    },
+    {
+        "question": "Calculate the amount of water which should be added to 80% solution of Sulphuric acid to make it a 50% solution?",
+        "options": {
+            "A": "60cc",
+            "B": "80cc",
+            "C": "75cc",
+            "D": "70cc"
+        },
+        "correct_option": "A",
+        "solution": "Concentration of Sulphuric acid = 80%\nSo in a 100cc, Sulphuric acid = 80cc and water = 20cc\nLet x be the amount of water added to make concentration of 50%\n⇒80/(100+x) = 50/100\n⇒ 80/(100+x) = 1/2\n∴ x = 60cc"
+    },
+    {
+        "question": "An metallic alloy contains 20g copper, 20g tin and 40g silver.Then find out the percentage of tin in the alloy?",
+        "options": {
+            "A": "20%",
+            "B": "30%",
+            "C": "25%",
+            "D": "40%"
+        },
+        "correct_option": "C",
+        "solution": "Total weight of alloy = 20+20+ 40 = 80g\nWeight of tin = 20g\nPercentage of tin = 20g/80g x 100\n=25%"
+    },
+    {
+        "question": "If the price of petrol is increased by 20% and subsequently by 40%. If the original price was Rs25 per litre then what is then the final price per litre?",
+        "options": {
+            "A": "42",
+            "B": "45",
+            "C": "48",
+            "D": "40"
+        },
+        "correct_option": "A",
+        "solution": "Final Price = 25 x (1 + 20/100) x (1 + 40/100)\n=Rs.25 x 1.2 x 1.4\n= Rs. 42"
+    },
+    {
+        "question": "The selling price and cost price of an article differs by 480. What is the selling price in case the profit percentage is 20%?",
+        "options": {
+            "A": "2400",
+            "B": "2880",
+            "C": "2600",
+            "D": "2000"
+        },
+        "correct_option": "B",
+        "solution": "SP - CP = 480\n1.2x - x = 480\n⇒0.2x = 480\n⇒x = 2400\n\nSo selling price SP = 2400 + 480 = 2880"
+    },
+    {
+        "question": "The price of a product is increased by 20%. If the original price is Rs. 300, what is the final price of the product?",
+        "options": {
+            "A": "350",
+            "B": "360",
+            "C": "365",
+            "D": "370"
+        },
+        "correct_option": "B",
+        "solution": "Final Price = Initial price + Initial price x 20/100\n= Initial price x (1+20/100)\n= Rs.300x(1.2)\n= Rs.360"
+    },
+    {
+        "question": "If 35% of a number is 112, then the number is",
+        "options": {
+            "A": "380",
+            "B": "300",
+            "C": "320",
+            "D": "35"
+        },
+        "correct_option": "C",
+        "solution": "Let the number be y.\nThen, 35% of y = 112\n(35 / 100)y = 112\ny = (112 x 100) / 35\n= 320"
+    },
+    {
+        "question": "75 % of a number when added to 75 is equal to that number. What is the number?",
+        "options": {
+            "A": "280",
+            "B": "400",
+            "C": "300",
+            "D": "305"
+        },
+        "correct_option": "C",
+        "solution": "Let 'x' be the required number\n0.75x + 75 = x\n∴ 0.25x = 75\n∴ x = 75 / 0.25 = 300"
+    },
+    {
+        "question": "Mukul's income is 10% more than Sunil's. How much less is Sunil's income than that of Mukul's?",
+        "options": {
+            "A": "8.09 %",
+            "B": "9.09 %",
+            "C": "7.09 %",
+            "D": "7.90 %"
+        },
+        "correct_option": "B",
+        "solution": "Sunil's income is less than Mukul's = [(10 / (100 + 10)] × 100 %\n= ( 1000 / 110 )%\n= 9.09 %"
+    },
+    {
+        "question": "The total population of a country is 294000, out of which 150000 are males. Out of every 100 males, 98 can read and write, but only 53% of the total population can do so. Find the percentage of women who can read and write.",
+        "options": {
+            "A": "6.125 %",
+            "B": "5.125 %",
+            "C": "6.000 %",
+            "D": "4.125 %"
+        },
+        "correct_option": "A",
+        "solution": "Number of men who can read and write = 150000 × (98 ÷ 100) =147000\nNumber of men and women who can read and write =294000 × (53 ÷ 100) =155820\nNumber of women who can read and write 155820 - 147000 = 8820\nThus, out of 144000 women 8820 can read and write.\nRequired percentage = (8820 × 100) ⁄ 144000 %= 6.125"
+    },
+    {
+        "question": "The selling price and cost price of an article differs by 480. What is the selling price in case the profit percentage is 20%?",
+        "options": {
+            "A": "2400",
+            "B": "2880",
+            "C": "2600",
+            "D": "2000"
+        },
+        "correct_option": "B",
+        "solution": "SP - CP = 480\n1.2x - x = 480\n⇒0.2x = 480\n⇒x = 2400\n\nSo selling price SP = 2400 + 480 = 2880"
+    },
+    {
+        "question": "If 16% of 40% of a number is 8, the number is ?",
+        "options": {
+            "A": "200",
+            "B": "225",
+            "C": "125",
+            "D": "320"
+        },
+        "correct_option": "C",
+        "solution": "Let the required number be N.\nThen, (16/100) x (40/100) x N = 8\nThen, N = (8 x 100 x 100) / (16 x 40)\n= 125"
+    },
+    {
+        "question": "A number exceeds 20% itself by 40. The number is ?",
+        "options": {
+            "A": "50",
+            "B": "60",
+            "C": "80",
+            "D": "320"
+        },
+        "correct_option": "A",
+        "solution": "Let the required number be N.\nThen, N - 20% of N = 40\n⇒ N - 20N/100 = 400\n⇒ 5N - N = 200\n∴ N = 50"
+    },
+    {
+        "question": "81/3% expressed as a fraction is ?",
+        "options": {
+            "A": "25/3",
+            "B": "3/25",
+            "C": "1/12",
+            "D": "1/4"
+        },
+        "correct_option": "C",
+        "solution": "81/3% = (25/3 x 1/100) = 1/12"
+    },
+    {
+        "question": ".025 in terms of term of rate per cent is ?",
+        "options": {
+            "A": ".25%",
+            "B": "2.5%",
+            "C": "0.25%",
+            "D": "371/2%"
+        },
+        "correct_option": "B",
+        "solution": ".025 = (25/1000) x 100% = 2.5%"
+    },
+    {
+        "question": ".02 =(......?.....)% ",
+        "options": {
+            "A": "20",
+            "B": "2",
+            "C": ".02",
+            "D": ".2"
+        },
+        "correct_option": "B",
+        "solution": ".02 =(2/100) x 100% =2%"
+    },
+    {
+        "question": "If 16% of 40% of a number is 8, the number is?",
+        "options": {
+            "A": "200",
+            "B": "225",
+            "C": "125",
+            "D": "320"
+        },
+        "correct_option": "C",
+        "solution": "Let the required number be N.\nThen, (16/100) x (40/100) x N = 8\nThen, N = (8 x 100 x 100) / (16 x 40)\n= 125"
+    },
+    {
+        "question": "A number exceeds 20% itself by 40. The number is?",
+        "options": {
+            "A": "50",
+            "B": "60",
+            "C": "80",
+            "D": "320"
+        },
+        "correct_option": "A",
+        "solution": "Let the required number be N.\nThen, N - 20% of N = 40\n⇒ N - 20N/100 = 400\n⇒ 5N - N = 200\n∴ N = 50"
+    },
+    {
+        "question": "81/3% expressed as a fraction is?",
+        "options": {
+            "A": "25/3",
+            "B": "3/25",
+            "C": "1/12",
+            "D": "1/4"
+        },
+        "correct_option": "C",
+        "solution": "81/3% = (25/3 x 1/100) = 1/12"
+    },
+    {
+        "question": ".025 in terms of term of rate per cent is?",
+        "options": {
+            "A": ".25%",
+            "B": "2.5%",
+            "C": "0.25%",
+            "D": "37.5%"
+        },
+        "correct_option": "B",
+        "solution": ".025 = (25/1000) x 100% = 2.5%"
+    },
+    {
+        "question": ".02 = (......?.....)%",
+        "options": {
+            "A": "20",
+            "B": "2",
+            "C": ".02",
+            "D": ".2"
+        },
+        "correct_option": "B",
+        "solution": ".02 = (2/100) x 100% = 2%"
+    },
+    {
+        "question": "What percentage of 2/7 is 1/35?",
+        "options": {
+            "A": "2.5%",
+            "B": "10%",
+            "C": "25%",
+            "D": "20%"
+        },
+        "correct_option": "B",
+        "solution": "Let N% of 2/7 is 1/35\n∴ (2/7 x N) / 100 = 1/35\n⇒ N = 1/35 x 7/2 x 100 = 10%"
+    },
+    {
+        "question": "What percent of 7.2 kg is 18 gms?",
+        "options": {
+            "A": ".025%",
+            "B": ".25%",
+            "C": "2.5%",
+            "D": "25%"
+        },
+        "correct_option": "B",
+        "solution": "7.2 kg = 7.2 x 1000000 gm = 7200000 gms\nRequired percentage = (18/7200000) x 100 % = 0.25%"
+    },
+    {
+        "question": "What percentage of 2/7 is 1/35 ?",
+        "options": {
+            "A": "2.5%",
+            "B": "10%",
+            "C": "25%",
+            "D": "20%"
+        },
+        "correct_option": "B",
+        "solution": "Let N% of 2/7 is 1/35\n∴ (2/7 x N) / 100 = 1/35\n⇒ N = 1/35 x 7/2 x 100 = 10%"
+    },
+    {
+        "question": "What percent of 7.2 kg is 18 gms ?",
+        "options": {
+            "A": "0.025%",
+            "B": "0.25%",
+            "C": "2.5%",
+            "D": "25%"
+        },
+        "correct_option": "B",
+        "solution": "7.2 kg = 7.2 x 1000000 gm = 7200000 gms\nRequired percentage = (18/7200000) x 100 % = 0.25%"
+    },
+    {
+        "question": "?% of 130 = 10.4 ?",
+        "options": {
+            "A": "80",
+            "B": "8",
+            "C": "0.8",
+            "D": "0.08"
+        },
+        "correct_option": "B",
+        "solution": "Let Y% of 130 = 10.4\n⇒ (Y x 130) / 100 = 10.4\n∴ Y = (10.4 x 100) / 130 = 8"
+    },
+    {
+        "question": "The fraction equivalent to 2/5% is ?",
+        "options": {
+            "A": "1/40",
+            "B": "1/125",
+            "C": "1/250",
+            "D": "1/500"
+        },
+        "correct_option": "C",
+        "solution": "2/5% = (2/5) /100 = 1/250"
+    },
+    {
+        "question": "30% of 140 = ?% of 840 ?",
+        "options": {
+            "A": "5",
+            "B": "15",
+            "C": "24",
+            "D": "60"
+        },
+        "correct_option": "A",
+        "solution": "Let y% of 840 = 30% of 140\n⇒ (y/100) x 840 = (30/100) x 140\n∴ y = (30 x 140 x 100) / (100 x 840 ) = 5"
+    }
 ]

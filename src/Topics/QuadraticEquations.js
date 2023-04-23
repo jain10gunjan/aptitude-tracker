@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import percentageData from '../Questions/percentage.json';
+import percentageData from '../Questions/quadraticequations.json';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Aptitudelist from '../components/Aptitudelist';
 
-function Percentage() {
+function QuadraticEquation() {
   const [questions, setQuestions] = useState([]);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [userResponses, setUserResponses] = useState({});
@@ -79,7 +79,7 @@ function Percentage() {
           <div key={question.id}>
             <div class="quiz-container">
         <div class="question-numbercontainer"> 
-        <p class="text-sm text-gray-300">Aptitude Questions<br/> Chapter: Percentage </p>                
+        <p class="text-sm text-gray-300">Aptitude Questions<br/> Chapter: Quadratic Equations </p>                
         </div>                
         <div class="questioncontainer">                     
         Q{index + 1}:  {question.question}                                      
@@ -117,7 +117,7 @@ function Percentage() {
 }else{
     toast.error('wrong option');
 }}}>{question.options[String.fromCharCode(65 + 3)]}</div>
-<Link to={'/percentage/questions/' + index} target="_blank" rel="noopener noreferrer">
+<Link to={'/quadratic-equations/questions/' + index} target="_blank" rel="noopener noreferrer">
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   View Solution
 </button>
@@ -172,7 +172,7 @@ function Percentage() {
   );
 }
 
-export default Percentage;
+export default QuadraticEquation;
 
 
 //
