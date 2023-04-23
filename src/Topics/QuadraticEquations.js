@@ -4,26 +4,14 @@ import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Aptitudelist from '../components/Aptitudelist';
+import { MathJax, MathJaxContext } from "better-react-mathjax";
 
 function QuadraticEquation() {
   const [questions, setQuestions] = useState([]);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [userResponses, setUserResponses] = useState({});
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src =
-      'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
+  
   useEffect(() => {
     setQuestions(percentageData);
   }, []);
@@ -74,7 +62,7 @@ function QuadraticEquation() {
                 <div>
 
                 
-
+                <MathJaxContext>
                 {filteredQuestions.map((question, index) => (
           <div key={question.id}>
             <div class="quiz-container">
@@ -82,7 +70,7 @@ function QuadraticEquation() {
         <p class="text-sm text-gray-300">Aptitude Questions<br/> Chapter: Quadratic Equations </p>                
         </div>                
         <div class="questioncontainer">                     
-        Q{index + 1}:  {question.question}                                      
+        <MathJax>Q{index + 1}:  {question.question}</MathJax>                                 
         </div> 
             <div class="optionscontainer">
 <div  onClick={()=>{
@@ -96,27 +84,27 @@ function QuadraticEquation() {
 }
                             
 
-                           }}>{question.options[String.fromCharCode(65 + 0)]}</div>
+                           }}><MathJax>{question.options[String.fromCharCode(65 + 0)]}</MathJax></div>
                            <div  onClick={()=>{
   if(String.fromCharCode(65 + 1) === question.correct_option){
     toast.success('correct option');
 }else{
     toast.error('wrong option');
-}}}>{question.options[String.fromCharCode(65 + 1)]}</div>
+}}}><MathJax>{question.options[String.fromCharCode(65 + 1)]}</MathJax></div>
 
 <div  onClick={()=>{
   if(String.fromCharCode(65 + 2) === question.correct_option){
     toast.success('correct option');
 }else{
     toast.error('wrong option');
-}}}>{question.options[String.fromCharCode(65 + 2)]}</div>
+}}}><MathJax>{question.options[String.fromCharCode(65 + 2)]}</MathJax></div>
 
 <div  onClick={()=>{
   if(String.fromCharCode(65 + 3) === question.correct_option){
     toast.success('correct option');
 }else{
     toast.error('wrong option');
-}}}>{question.options[String.fromCharCode(65 + 3)]}</div>
+}}}><MathJax>{question.options[String.fromCharCode(65 + 3)]}</MathJax></div>
 <Link to={'/quadratic-equations/questions/' + index} target="_blank" rel="noopener noreferrer">
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   View Solution
@@ -130,6 +118,7 @@ function QuadraticEquation() {
 
           </div>
         ))}
+        </MathJaxContext>
 
           </div>
       
