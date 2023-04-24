@@ -14,7 +14,6 @@ ReactDOM.render(
       <Routes>
   <Route path="/" element={<App />} />
   <Route path="/percentage" element={<Percentage />}/>
-  <Route path="/template" element={<Template2 />}/>
   <Route path="/percentage/questions/:qid" element={<PercentageQ />}/>
   <Route path="/quadratic-equations" element={<QuadraticEquation />}/>
   <Route path="/quadratic-equations/questions/:qid" element={<QuadraticEquationQ />}/>
