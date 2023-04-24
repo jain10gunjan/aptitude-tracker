@@ -7,7 +7,7 @@ import Percentage from './Topics/Percentage';
 import PercentageQ from './Topics/PercentageQ';
 import QuadraticEquation from './Topics/QuadraticEquations';
 import QuadraticEquationQ from './QuestionsTemplates/QuadraticEquationQ';
-import Template2 from './Topics/Template2';
+//import Template2 from './Topics/Template2';
 
 ReactDOM.render(
   <BrowserRouter>
