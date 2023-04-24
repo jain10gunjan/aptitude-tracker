@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import percentageData from '../Questions/percentage.json';
 import toast, { Toaster } from 'react-hot-toast';
@@ -8,10 +8,6 @@ import { Link } from 'react-router-dom';
 
 
 const PercentageQ = () => {
-const [className1, setClassName1] = useState('');
-const [className2, setClassName2] = useState('');
-const [className3, setClassName3] = useState('');
-const [className4, setClassName4] = useState('');
 
 
 
