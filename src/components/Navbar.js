@@ -26,7 +26,7 @@ const Navbar = () => {
                     
                     className="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                <Link to="/privacypolicy">Privacy Policy</Link>
+                <Link to="/privacy-policy">Privacy Policy</Link>
                   </div>
 
                   <div
@@ -50,7 +50,6 @@ const Navbar = () => {
                     Sitemap
                   </div>
 
-                  <button className=" justify-end text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" >Sign In</button>
 
                 </div>
               </div>
@@ -125,7 +124,7 @@ const Navbar = () => {
                     
                     className="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                <Link to="/privacypolicy">Privacy Policy</Link>
+                <Link to="/privacy-policy">Privacy Policy</Link>
                   </div>
 
                   <div
@@ -148,7 +147,6 @@ const Navbar = () => {
                   >
                     Sitemap
                   </div>
-                  <button className=" justify-end text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sign In</button>
               </div>
             </div>
           )}

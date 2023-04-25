@@ -1,42 +1,15 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import percentageData from '../Questions/percentage.json';
 import toast, { Toaster } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
+import { MathJax, MathJaxContext } from "better-react-mathjax";
+import Footer from '../components/Footer';
 
 
 
 const PercentageQ = () => {
-
-
-
-useEffect(() => {
-  const script = document.createElement('script');
-  script.src =
-    'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML';
-  script.async = true;
-  document.body.appendChild(script);
-
-  
-
-  return () => {
-    if (document.body.contains(script)) {
-      document.body.removeChild(script);
-    }
-  };
-}, []);
-
-
-
-
-
-
-
-
-
-  
-
 
 
 let {qid} = useParams()
@@ -46,7 +19,6 @@ let q2 = x+1;
 let q3 = x+2;
 let q4 = x+3;
 let q5 = x+4;
-let q6 = x+5;
 
   return (
     <>
@@ -56,18 +28,16 @@ let q6 = x+5;
 
     
 
-
-                                
-
-
-<div class="flex flex-wrap mt-4 mx-2 mb-8">
-      <div class="w-full md:w-2/3 lg:w-3/4 px-2 mb-4">
-      <div class="max-h-screen max-w-full p-8">
+    <MathJaxContext>
+    <section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+    <div>
         <div class="question-numbercontainer"> 
-        <p class="text-sm text-gray-300">Physics | JEE Mains 2022 | 24 - June Shift - 1  <br/> Chapter : Work, Energy and Power | Topic : Work Done by a Variable Force </p>                
+        <p class="text-sm text-gray-300">Aptitude Questions <br/>Chapter : Percentage </p>                
         </div>                
         <div class="questioncontainer">                     
-        {percentageData[qid].question}                                      
+        <MathJax>{percentageData[qid].question}</MathJax>                                      
         </div>                
         <div class="optionscontainer">
 
@@ -78,28 +48,28 @@ let q6 = x+5;
                             }else{
                                 toast.error('wrong option');
                             }
-                           }}>{percentageData[qid].options[String.fromCharCode(65 + 0)]}</div>                    
+                           }}><MathJax>{percentageData[qid].options[String.fromCharCode(65 + 0)]}</MathJax></div>                    
                            <div onClick={()=>{
                             if(String.fromCharCode(65 + 1) === percentageData[qid].correct_option){
                                 toast.success('correct option');
                             }else{
                                 toast.error('wrong option');
                             }
-                           }}>{percentageData[qid].options[String.fromCharCode(65 + 1)]}</div>                    
+                           }}><MathJax>{percentageData[qid].options[String.fromCharCode(65 + 1)]}</MathJax></div>                    
                            <div  onClick={()=>{
                             if(String.fromCharCode(65 + 2) === percentageData[qid].correct_option){
                                 toast.success('correct option');
                             }else{
                                 toast.error('wrong option');
                             }
-                           }}>{percentageData[qid].options[String.fromCharCode(65 + 2)]}</div>                    
+                           }}><MathJax>{percentageData[qid].options[String.fromCharCode(65 + 2)]}</MathJax></div>                    
                            <div  onClick={()=>{
                             if(String.fromCharCode(65 + 3) === percentageData[qid].correct_option){
                                 toast.success('correct option');
                             }else{
                                 toast.error('wrong option');
                             }
-                           }}>{percentageData[qid].options[String.fromCharCode(65 + 3)]}</div>                    
+                           }}><MathJax>{percentageData[qid].options[String.fromCharCode(65 + 3)]}</MathJax></div>                    
                                      
                              </div>                
                              <div>                                     
@@ -107,9 +77,8 @@ let q6 = x+5;
                                 <div class="questioncontainer answercontainer">{percentageData[qid].solution}  </div>                                
                                 </div>
       </div>
-      <div class="w-full md:w-1/3 lg:w-1/4 px-2 mb-4">
-      <div class="md:flex-grow">
-          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Related Questions</h2>
+    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+    <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Related Questions</h2>
           <Link to={'/percentage/questions/' + q1} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
         {x}: {percentageData[x].question}
         {x}                                      
@@ -136,16 +105,14 @@ let q6 = x+5;
         {x+4}: {percentageData[x+4].question}
         {x}                                      
             </p></Link><br/>
-
-            <Link to={'/percentage/questions/' + q6} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
-        {x+5}: {percentageData[x+5].question}
-        {x}                                      
-            </p></Link><br/>
-            
-        </div>
       </div>
-   </div>
+      </div>       
+      </section>     
+      </MathJaxContext>
+
+
                                 <Toaster/>
+                                <Footer/>
     </>
   )
 }

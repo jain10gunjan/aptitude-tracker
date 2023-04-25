@@ -1,16 +1,5 @@
 [
     {
-        "question": "The selling price and cost price of an article differs by 480. What is the selling price in case the profit percentage is 20%?",
-        "options": {
-            "A": "2400",
-            "B": "2880",
-            "C": "2600",
-            "D": "2000"
-        },
-        "correct_option": "B",
-        "solution": "SP - CP = 480\n\\(1.2x - x = 480\\)\n\\(\\Rightarrow0.2x = 480\\)\n\\(\\Rightarrowx = 2400\\)\n\nSo selling price SP = 2400 + 480 = 2880"
-    },
-    {
         "question": "Which of the following equations is a quadratic?",
         "options": {
             "A": "\\(x^3 - x^2 - x + 5 = 0\\)",
@@ -20,7 +9,7 @@
             "E": "None of the above"
         },
         "correct_option": "C",
-        "solution": "Clearly, \\(7x^2 = 49\\) or \\(7x^2 - 49 = 0\\), which is of the form \\(ax^2 + bx + c = 0\\), where \\(b = 0\\).\nThus, \\(7x^2 - 49 = 0\\) is a quadratic equation."
+        "solution": "Clearly, \\(7x^2 = 49\\) or \\(7x^2 - 49 = 0\\), which is of the form \\(ax^2 + bx + c = 0\\), \n where \\(b = 0\\).\nThus, \\(7x^2 - 49 = 0\\) is a quadratic equation."
     },
     {
         "question": "Which of the following equations has real roots?",
@@ -45,5 +34,134 @@
         },
         "correct_option": "C",
         "solution": "Given equation is \\(2x^2 - 9x - 18 = 0\\)\n[by factorisation method]\n\\(\\Rightarrow 2x^2 - 12x + 3x - 18 = 0\\)\n\\(\\Rightarrow 2x(x - 6) + 3(x - 6) = 0\\)\n\\(\\Rightarrow (2x + 3)(x - 6)\\)"
-    }
+    },
+    {
+        "question": "If \\(a + (1/a)^2 = 3\\), what is the value of \\(a^3 + (1/a)^3\\)?",
+        "options": {
+            "A": "\\(10\\sqrt{3}/3\\)",
+            "B": "0",
+            "C": "\\(3\\sqrt{3}\\)",
+            "D": "\\(6\\sqrt{3}\\)",
+            "E": "None of the above"
+        },
+        "correct_option": "B",
+        "solution": "Given, \\(a + (1/a)^2 = 3\\)\nTaking square roots both sides, we get\n\\(a + (1/a) = \\sqrt{3}\\)\nOn cubing both sides, we have\n\\(a^3 + 1/a^3 + 3.a.1/[a(a + 1/a)] = 3 \\sqrt{3}\\)\n\\(a^3 + 1/a^3 + 3\\sqrt{3} = 3\\sqrt{3}\\)\nTherefore, \\(a^3 + 1/a^3 = 0\\)"
+    },
+    {
+        "question": "If \\(2x^2 - 7xy + 3y^2 = 0\\), then the value of \\(x:y\\) is",
+        "options": {
+            "A": "3:2",
+            "B": "2:3",
+            "C": "3:1 and 1:2",
+            "D": "5:6",
+            "E": "None of the above"
+        },
+        "correct_option": "C",
+        "solution": "The given equation is\n\\(2x^2 - 7xy + 3y^2 = 0\\)\n\\(\\Rightarrow 2x^2 - 6xy - xy + 3y^2 = 0\\)\n\\(\\Rightarrow 2x(x - 3y) - y(x - 3y) = 0\\)\n\\(\\Rightarrow (2x - y)(x - 3y) = 0\\)\nEither, \\(2x - y = 0\\) \\(\\Rightarrow 2x = y\\)\n\\(\\Rightarrow x:y = 1:2\\)\nor \\(x - 3y = 0\\) \\(\\Rightarrow x = 3y\\)\n\\(\\Rightarrow x:y = 3:1\\)\nTherefore, the value of \\(x:y\\) can be \\(3:1\\) and \\(1:2\\) or \\(3:2\\) overall."
+    },
+    {
+        "question": "Find the roots of the equation \\(2x^2 - 9x - 18 = 0\\).",
+        "options": {
+            "A": "\\(\\frac{3}{2}\\) and 6",
+            "B": "\\(-\\frac{3}{2}\\) and \\(-6\\)",
+            "C": "\\(-\\frac{3}{2}\\) and 6",
+            "D": "\\(\\frac{3}{2}\\) and \\(-6\\)",
+            "E": "None of the above"
+        },
+        "correct_option": "C",
+        "solution": "Given equation is \\(2x^2 - 9x - 18 = 0\\)\\[by factorisation method]\\\\(\\Rightarrow 2x^2 - 12x + 3x - 18 = 0\\)\\\\(\\Rightarrow 2x(x - 6) + 3(x - 6) = 0\\)\\\\(\\Rightarrow (2x + 3)(x - 6)\\)"
+    },
+    {
+        "question": "One root of the quadratic equation \\(x^2 - 5x + 6 = 0\\) is 3. Find the other root.",
+        "options": {
+            "A": "2",
+            "B": "-2",
+            "C": "1",
+            "D": "-1",
+            "E": "None of the above"
+        },
+        "correct_option": "A",
+        "solution": "The given equation is\n\\(x^2 - 5x + 6 = 0\\) ⇒ \\(x^2 - 2x - 3x+ 6 = 0\\)\n⇒ \\(x(x - 2) - 3(x - 2) = 0\\)\n⇒ \\((x - 2)(x - 3) = 0\\)\n⇒ \\(x - 2 = 0\\) or \\(x - 3 = 0\\)\n⇒ \\(x = 2\\) or \\(x = 3\\)\nThus, the other root of the given quadratic equation is 2."
+    },
+    {
+        "question": "Construct a quadratic equation whose roots have the sum = 6 and product = \\(-16\\).",
+        "options": {
+            "A": "\\(x^2 - 6x - 16 = 0\\)",
+            "B": "\\(x^2 + 6x - 16 = 0\\)",
+            "C": "\\(x^2 - \\sqrt{3}x - 16 = 0\\)",
+            "D": "None of these"
+        },
+        "correct_option": "A",
+        "solution": "Given that :- sum of the roots = 6 and product of two roots = -16\nThe required quadratic equation is \\(x^2 - (\\text{sum of the roots})x + (\\text{product of the roots}) = 0\\)\n⇒ \\(x^2 - 6x - 16 = 0\\)"
+    },
+    {
+        "question": "In each of these questions, two equations are given. You have to solve these equations and find out the values of x and y and give answer (1) if x < y, (2) if x > y, (3) if x ≤ y, (4) if x ≥ y, (5) if x = y\nⅠ. 4x + 7y = 209\nⅡ. 12x − 14y = − 38",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "5"
+        },
+        "correct_option": "D",
+        "solution": "According to the given equations,\n\nⅠ. 4x + 7y = 209\nⅡ. 12x - 14y = -38\n\nMultiplying equation (Ⅰ) by 2, we get\n\n8x + 14y = 418 (4 x Ⅰ)\n\nAdding equations (Ⅱ) and (4 x Ⅰ), we get\n\n20x = 380\nx = 19\n\nSubstituting the value of x in equation (Ⅰ), we get\n\n4(19) + 7y = 209\n76 + 7y = 209\n7y = 133\ny = 19\n\nTherefore, x = y. Hence, the correct answer is (5) x = y."
+    },
+    {
+        "question": "In each of these questions, two equations are given. You have to solve these equations and find out the values of x and y and give answer (1) if x < y, (2) if x > y, (3) if x ≤ y, (4) if x ≥ y, (5) if x = y\nFind the roots of the equations Ⅰ. 18x² + 18x + 4 = 0 and Ⅱ. 12y² + 29y + 14 = 0",
+        "options": {
+            "A": "x < y",
+            "B": "x > y",
+            "C": "x ≤ y",
+            "D": "x ≥ y",
+            "E": "x = y"
+        },
+        "correct_option": "D",
+        "solution": "From equation Ⅰ. 18x² + 18x + 4 = 0\n⇒ 18x² + 12x + 6x + 4 = 0\n⇒ 6x(3x + 2) + 2(3x + 2) = 0\n⇒ (6x + 2)(3x + 2) = 0\n\n⇒ x = -\frac{1}{3}, -\frac{2}{3}\n\nFrom equation Ⅱ. 12y² + 29y + 14 = 0\n⇒ 12y² + 21y + 8y + 14 = 0\n⇒ 3y(4y + 7) + 2(4y + 7) = 0\n⇒ (3y + 2)(4y + 7) = 6\n⇒ y = -\frac{2}{3}, -\frac{7}{4}\n\nFrom above equations we can say that x ≥ y is correct answer ."
+    },
+    {
+        "question": "In each of these questions, two equations are given. You have to solve these equations and find out the values of x and y and give answer (1) if x < y, (2) if x > y, (3) if x ≤ y, (4) if x ≥ y, (5) if x = y\nSolve the following equations:\n\nI. \\(8x^2 + 6x = 5\\)\nII. \\(12y^2 - 22y + 8 = 0\\)",
+        "options": {
+            "A": "\\(x = \\frac{1}{2}, y = 1\\)",
+            "B": "\\(x = -\\frac{5}{2}, y = 1\\)",
+            "C": "\\(x = -\\frac{5}{2}, y = \\frac{4}{3}\\)",
+            "D": "\\(x = \\frac{1}{2}, y = \\frac{4}{3}\\)",
+            "E": "None of the above"
+        },
+        "correct_option": "C",
+        "solution": "We can solve the given equations as follows:\n\nI. \\(8x^2 + 6x = 5\\)\n\n\\(\\Rightarrow 8x^2 + 10x - 4x - 5 = 0\\)\n\\(\\Rightarrow 2x(4x + 5) - 1(4x + 5) = 0\\)\n\\(\\Rightarrow (2x - 1)(4x + 5) = 0\\)\n\n\\(\\therefore x = \\frac{1}{2}, -\\frac{5}{2}\\)\n\nII. \\(12y^2 - 22y + 8 = 0\\)\n\n\\(\\Rightarrow 12y^2 - 16y - 6y + 8 = 0\\)\n\\(\\Rightarrow 4y(3y - 4) - 2(3y - 4) = 0\\)\n\\(\\Rightarrow (4y - 2)(3y - 4) = 0\\)\n\n\\(\\therefore y = \\frac{1}{2}, \\frac{4}{3}\\)\n\nHence, we get \\(x = -\\frac{5}{2}, y = \\frac{4}{3}\\)."
+    },
+    {
+        "question": "In each of these questions, two equations are given. You have to solve these equations and find out the values of x and y and give answer (1) if x < y, (2) if x > y, (3) if x ≤ y, (4) if x ≥ y, (5) if x = y\nFind the roots of the equation \\(16x^2 + 20x + 6 = 0\\) and \\(10y^2 + 38y + 24 = 0\\).",
+        "options": {
+            "A": "\\(-\\frac{3}{4}\\), \\(-\\frac{1}{2}\\), -3, -4/5",
+            "B": "\\(-\\frac{3}{4}\\), \\(-\\frac{1}{2}\\), -3, \\(-\\frac{4}{5}\\)",
+            "C": "\\(\\frac{3}{4}\\), \\(\\frac{1}{2}\\), -3, -4/5",
+            "D": "\\(\\frac{3}{4}\\), \\(\\frac{1}{2}\\), -3, \\(-\\frac{4}{5}\\)"
+        },
+        "correct_option": "D",
+        "solution": "Given equations are:\n\\(16x^2 + 20x + 6 = 0\\) and \\(10y^2 + 38y + 24 = 0\\)\n\nFor equation 1:\n\\(16x^2 + 20x + 6 = 0\\)\n\\(\\Rightarrow 16x^2 + 12x + 8x + 6 = 0\\)\n\\(\\Rightarrow 4x(4x + 3) + 2(4x + 3) = 0\\)\n\\(\\Rightarrow (4x + 2)(4x + 3) = 0\\)\n\\(\\Rightarrow x = -\frac{3}{4}, -\frac{1}{2}\\)\n\nFor equation 2:\n\\(10y^2 + 38y + 24 = 0\\)\n\\(\\Rightarrow 10y^2 + 30y + 8y + 24 = 0\\)\n\\(\\Rightarrow 10y(y + 3) + 8(y + 3) = 0\\)\n\\(\\Rightarrow (10y + 8)(y + 3) = 0\\)\n\\(\\Rightarrow y = -3, -\frac{4}{5}\\)"
+    },
+    {
+        "question": "The roots of the equation \\(a^2x^2 - 3abx + 2b^2 = 0\\) are",
+        "options": {
+            "A": "\\(\\frac{2b}{a}\\), \\(-\\frac{b}{a}\\)",
+            "B": "\\(\\frac{2b}{a}\\), \\(\\frac{b}{a}\\)",
+            "C": "\\(-\\frac{2b}{a}\\), \\(-\\frac{b}{a}\\)",
+            "D": "None of these"
+        },
+        "correct_option": "B",
+        "solution": "The given quadratic equation is\n\\(a^2x^2 - 3abx + 2b^2 = 0\\) \\(\\Rightarrow a^2x^2 - abx - 2abx + 2b^2 = 0\\) \\(\\Rightarrow ax(ax - 2b) - b(ax - 2b) = 0\\) \\(\\Rightarrow (ax - 2b)(ax - b) = 0\\) \\(\\Rightarrow ax - 2b = 0\\) or \\(ax - b = 0\\)\n\\(\\Rightarrow x = \\frac{2b}{a}\\) or \\(x = \\frac{b}{a}\\)\nThus, the two roots of the given quadratic equation are \\(\\frac{2b}{a}\\) and \\(\\frac{b}{a}\\)."
+    },
+    {
+        "question": "If α and β are the roots of the quadratic equation ax^2 + bx + c = 0, what is the value of α^3 + β^3?",
+        "options": {
+          "A": "\\(\\frac{3abc}{a^2}\\)",
+          "B": "\\(\\frac{3abc - b^3}{a^3}\\)",
+          "C": "\\(\\frac{b^3}{a^3} - 3\\frac{bc}{a^2}\\)",
+          "D": "\\(\\frac{3abc}{a^3}\\)",
+          "E": "\\(\\frac{3abc - b^3}{a^2}\\)"
+        },
+        "correct_option": "B",
+        "solution": "Let α and β be the roots of the quadratic equation ax^2 + bx + c = 0. Then we have:\n\nα + β = -b/a\nαβ = c/a\n\nUsing the identity (α + β)^3 = α^3 + β^3 + 3αβ(α + β), we get:\n\nα^3 + β^3 = (α + β)^3 - 3αβ(α + β)\n\nSubstituting the values of α + β and αβ, we get:\n\nα^3 + β^3 = (-b/a)^3 - 3(c/a)(-b/a)\n\nSimplifying the above expression, we get:\n\nα^3 + β^3 = (3abc - b^3)/a^3\n\nTherefore, the correct option is (B)."
+      }
+      
 ]

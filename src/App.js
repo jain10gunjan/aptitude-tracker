@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from './components/Navbar';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
@@ -9,9 +10,16 @@ function App() {
       <>
       <div>
       <Navbar/>
+      <Helmet>
+<title>{'Aptitude Tracker'} </title>
+      <meta name="description" content={'Practice Percentage Questions For Placements and Other Competitive Examinations.'}/>
+      <meta name="keywords"content="Aptitude Questions, Placements preparation, Aptitude Placements Questions, UPSC Quadratic Equations Questions."/>
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
+      </Helmet>
     </div>
       </>      
-      <div class="mx-16 mt-10 mb-4 flex flex-col">
+      <div class="mx-16 mt-10 mb-10 flex flex-col">
 
   <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
@@ -23,7 +31,7 @@ function App() {
 
       <div class="ml-4">
         <h2 class="font-semibold">Number System</h2>
-        <Link to='/numbersystem'><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
+        <Link to='/number-system'><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
       </div>
     </div>
 
@@ -36,8 +44,8 @@ function App() {
 
       <div class="ml-4">
         <h2 class="font-semibold">Simplification</h2>
-        <Link to='/simplification'><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
-
+        <Link to='/simplification'><p class="mt-2 text-sm text-gray-500">Start Practicing</p>
+</Link>
       </div>
     </div>
 
@@ -322,7 +330,7 @@ function App() {
 
       <div class="ml-4">
         <h2 class="font-semibold">Time and Work</h2>
-        <Link to='/timeandwork'><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
+        <Link to='/time-and-work'><p class="mt-2 text-sm text-gray-500">Start Practicing</p></Link>
       </div>
     </div>
     <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
@@ -449,7 +457,7 @@ function App() {
 </div>
 
 
-  
+  <Footer/>
   
 </div>
   );

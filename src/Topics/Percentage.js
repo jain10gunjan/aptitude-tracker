@@ -5,42 +5,58 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Aptitudelist from '../components/Aptitudelist';
 import { MathJax, MathJaxContext } from "better-react-mathjax";
+import { Helmet } from 'react-helmet';
+import Footer from '../components/Footer'
 
 function Percentage() {
   const [questions, setQuestions] = useState([]);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
-  
+  const [userResponses, setUserResponses] = useState({});
 
+  
   useEffect(() => {
     setQuestions(percentageData);
   }, []);
 
+  
+
   useEffect(() => {
     setFilteredQuestions(
       questions.filter((question) =>
-        question.question.toLowerCase().includes(searchTerm.toLowerCase())
+        question.question.toLowerCase()
       )
     );
     
-  }, [questions, searchTerm]);
+  }, [questions]);
 
   
 
-  const handleSearch = (event) => {
-    
-    setSearchTerm(event.target.value);
-    
-  };
-
   
 
+  useEffect(() => {
+    const storedResponses = JSON.parse(localStorage.getItem('userResponses'));
+    if (storedResponses) {
+      setUserResponses(storedResponses);
+    }
+  }, []);
 
+  useEffect(() => {
+    localStorage.setItem('userResponses', JSON.stringify(userResponses));
+  }, [userResponses]);
 
   return (
     <>
 
 <Navbar/>
+<Helmet>
+<title>{Percentage + 'Questions'} </title>
+      <meta name="description" content={'Practice Percentage Questions For Placements and Other Competitive Examinations.'}/>
+      <meta name="keywords"content="Aptitude Questions, Placements preparation, Percentage Placements Questions, UPSC Quadratic Equations Questions."/>
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
+      </Helmet>
+
+
 <div class="flex flex-wrap mt-4 mx-2 mb-8">
       <div class="w-full md:w-2/3 lg:w-3/4 px-2 mb-4">
       <div class="containerelement">
@@ -53,19 +69,11 @@ function Percentage() {
                 <h3 class="mt-1 mb-4 text-2xl font-bold text-left text-gray-800 sm:mx-6 sm:text-3xl md:text-4xl lg:text-3xl sm:text-center sm:mx-0">
                     Practice Unlimited For Free
                 </h3>
+              
                 
-                <form>   
-                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
-                    <div class="relative">
-                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                        </div>
-                        <input type="search" id="search-item" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Questions Or Chapters" required="" value={searchTerm} onChange={handleSearch}/>
-                        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-                    </div>
-                </form>
+                
                 <div>
-                    <div class="max-h-screen max-w-full p-8">
+                    <div class="max-h-screen max-w-full">
                        
                 <div>
 
@@ -75,10 +83,10 @@ function Percentage() {
           <div key={question.id}>
             <div class="quiz-container">
         <div class="question-numbercontainer"> 
-        <p class="text-sm text-gray-300">Aptitude Questions<br/> Chapter: Percentage </p>                
+        <p class="text-sm text-gray-300">Aptitude Questions<br/> Chapter: Quadratic Equations </p>                
         </div>                
         <div class="questioncontainer">                     
-        <MathJax> Q{index + 1}:  {question.question}</MathJax>                                      
+        <MathJax>Q{index + 1}:  {question.question}</MathJax>                                 
         </div> 
             <div class="optionscontainer">
 <div  onClick={()=>{
@@ -118,6 +126,20 @@ function Percentage() {
   View Solution
 </button>
 </Link>
+
+<details class="mt-4 group">
+				<summary class="">
+					<span class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> View Answer</span>
+					<span class="transition group-open:rotate-180">
+              </span>
+				</summary>
+				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+          Correct Option: {question.correct_option}
+          <br/>
+<MathJax>{percentageData[index].solution}</MathJax>          
+					 
+				</p>
+			</details>
                            </div>
 
 
@@ -126,7 +148,8 @@ function Percentage() {
 
           </div>
         ))}
-</MathJaxContext>
+        </MathJaxContext>
+
           </div>
       
       </div>
@@ -162,8 +185,8 @@ function Percentage() {
 
 
     
-      <Toaster position="top-right" reverseOrder={false} />
-      
+      <Toaster position="top-left" reverseOrder={false} />
+      <Footer/>
     </>
   );
 }

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import percentageData from '../Questions/quadraticequations.json';
+import percentageData from '../Questions/timeandwork.json';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Aptitudelist from '../components/Aptitudelist';
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import { Helmet } from 'react-helmet';
+import Footer from '../components/Footer'
 
-
-function QuadraticEquation() {
+function Timeanddistance() {
   const [questions, setQuestions] = useState([]);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
 
@@ -30,8 +30,8 @@ function QuadraticEquation() {
 
 
 const value = "Aptitude Questions";
-const chapterName = "Quadratic Equations"
-const pageValue="quadratic-equations"
+const chapterName = "Time and Work"
+const pageValue="time-and-work"
 
   return (
     <>
@@ -53,7 +53,7 @@ const pageValue="quadratic-equations"
         <section class="relative py-16 bg-white min-w-screen animation-fade animation-delay">
             <div class="container px-8 m-auto sm:px-12 xl:px-5">
                 <p class="text-xs font-bold text-left text-pink-500 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-                    Want to practice questions of Aptitude for Campus Placements, <br/>UPSC, GATE and other competitive exman. So Here You Can!.
+                    Want to practice questions of Aptitude for Campus Placements, <br/>other competitive exams. So Here You Can!.
                 </p>
                 <h3 class="mt-1 mb-4 text-2xl font-bold text-left text-gray-800 sm:mx-6 sm:text-3xl md:text-4xl lg:text-3xl sm:text-center sm:mx-0">
                     Practice Unlimited For Free
@@ -176,12 +176,12 @@ const pageValue="quadratic-equations"
 
     
       <Toaster position="top-left" reverseOrder={false} />
-      
+      <Footer/>
     </>
   );
 }
 
-export default QuadraticEquation;
+export default Timeanddistance;
 
 
 //

@@ -107,7 +107,3 @@ code {
   .containerelement{
     overflow-y: scroll;
 }
-
-.containerelement::-webkit-scrollbar{
-    display: none;
-}

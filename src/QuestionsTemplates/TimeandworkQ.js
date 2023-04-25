@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import percentageData from '../Questions/quadraticequations.json';
+import percentageData from '../Questions/timeandwork.json';
 import toast, { Toaster } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { MathJax, MathJaxContext } from "better-react-mathjax";
 import { Helmet } from 'react-helmet';
 import Footer from '../components/Footer'
 
-const QuadraticEquationQ = () => {
+const TimeandworkQ = () => {
   let {qid} = useParams()
   let x = Math.floor((Math.random() * 10) + 1);
   let q1 = x;
@@ -28,7 +28,7 @@ const QuadraticEquationQ = () => {
       {
         "@type": "AlignmentObject",
         "alignmentType": "educationalSubject",
-        "targetName": "Quadratic Equations"
+        "targetName": "Time and Work"
       }
     ],
     "hasPart": [
@@ -46,6 +46,7 @@ const QuadraticEquationQ = () => {
     ]
   };
 
+  const pageValue = '/time-and-work/questions/'
   
   
     return (
@@ -58,7 +59,7 @@ const QuadraticEquationQ = () => {
 
       <title> {(percentageData[qid].question).slice(0, 15)} </title>
       <meta name="description" content={percentageData[qid].question}/>
-      <meta name="keywords"content="Aptitude Questions, Placements preparation, Quadratic Equations Placements Questions, UPSC Quadratic Equations Questions."/>
+      <meta name="keywords"content="Aptitude Questions, Placements preparation, Time and Work Placements Questions, UPSC Quadratic Equations Questions."/>
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -71,7 +72,7 @@ const QuadraticEquationQ = () => {
       <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
       <div>
           <div class="question-numbercontainer"> 
-          <p class="text-sm text-gray-300">Aptitude Questions <br/>Chapter : Quadractic Equations </p>                
+          <p class="text-sm text-gray-300">Aptitude Questions <br/>Chapter : Time and Work </p>                
           </div>                
           <div class="questioncontainer">                     
           <MathJax>{percentageData[qid].question}</MathJax>                                      
@@ -111,33 +112,33 @@ const QuadraticEquationQ = () => {
                                </div>                
                                <div>                                     
                                   </div>              
-                                  <div class="questioncontainer answercontainer"><MathJax>{percentageData[qid].solution}</MathJax>  </div>                                
+                                  <div class="questioncontainer answercontainer">Solution: <br/><MathJax>{percentageData[qid].solution}</MathJax>  </div>                                
                                   </div>
         </div>
       <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
       <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Related Questions</h2>
-      <Link to={'/quadratic-equations/questions/' + q1}>
+      <Link to={`${pageValue}` + q1}>
 <p class="text-sm leading-relaxed">
   
            <MathJax>{x}: {percentageData[x].question}</MathJax>
                                                
               </p></Link><br/>
   
-              <Link to={'/quadratic-equations/questions/' + q2} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+              <Link to={`${pageValue}` + q2} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
            <MathJax>{x+1}: {percentageData[x+1].question}</MathJax>
               </p></Link><br/>
   
-              <Link to={'/quadratic-equations/questions/' + q3} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+              <Link to={`${pageValue}` + q3} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
           <MathJax>{x+2}:  {percentageData[x+2].question}</MathJax>
               </p></Link><br/>
   
   
-              <Link to={'/quadratic-equations/questions/' + q4} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+              <Link to={`${pageValue}` + q4} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
            <MathJax>{x+3}:{percentageData[x+3].question}</MathJax>
               </p></Link><br/>
   
   
-              <Link to={'/quadratic-equations/questions/' + q5} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
+              <Link to={`${pageValue}` + q5} rel="noopener noreferrer"><p class="text-sm leading-relaxed">
            <MathJax>{x+4}: {percentageData[x+4].question}</MathJax>
               </p></Link><br/>
         </div>
@@ -152,4 +153,4 @@ const QuadraticEquationQ = () => {
     )
   }
 
-export default QuadraticEquationQ
+export default TimeandworkQ
