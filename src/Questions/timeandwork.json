@@ -156,12 +156,12 @@
     {
         "question": "A and B can do a piece of work in 12 days. B and C in 15 days. C and A in 20 days. A alone can do the work in ?",
         "options": {
-            "A": "152/3",
-            "B": "24 days",
-            "C": "30 days",
-            "D": "4 days"
+          "A": "152\/3",
+          "B": "24 days",
+          "C": "30 days",
+          "D": "4 days"
         },
         "correct_option": "C",
-        "solution": "[(A + B) + (B + C) + (C + A)]'s 1 day's work = (1/12 + 1/15 + 1/20) = 1/5\n⇒ 2(A + B + C)'s 1 days work = 1/5\n⇒ (A + B + C)'s 1 day's work = 1/10\n&rArr A's 1 day's work = (1/10 - 1/15) = 1/30\n∴ A alone can finish it in 30 days."
-    }
+        "solution": "[(A + B) + (B + C) + (C + A)]\\'s 1 day\\'s work = (1\/12 + 1\/15 + 1\/20) = 1\/5\\n\\u21D2 2(A + B + C)\\'s 1 days work = 1\/5\\n\\u21D2 (A + B + C)\\'s 1 day\\'s work = 1\/10\\n\\u2192 A\\'s 1 day\\'s work = (1\/10 - 1\/15) = 1\/30\\n\\u2234 A alone can finish it in 30 days."
+      }
 ]

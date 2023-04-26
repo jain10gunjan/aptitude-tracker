@@ -49,7 +49,7 @@ function Percentage() {
 
 <Navbar/>
 <Helmet>
-<title>{Percentage + 'Questions'} </title>
+<title>Percentage Questions</title>
       <meta name="description" content={'Practice Percentage Questions For Placements and Other Competitive Examinations.'}/>
       <meta name="keywords"content="Aptitude Questions, Placements preparation, Percentage Placements Questions, UPSC Quadratic Equations Questions."/>
       <meta name="robots" content="index, follow" />
@@ -67,7 +67,7 @@ function Percentage() {
                     Want to practice questions of Aptitude for Campus Placements, <br/>UPSC, GATE and other competitive exman. So Here You Can!.
                 </p>
                 <h3 class="mt-1 mb-4 text-2xl font-bold text-left text-gray-800 sm:mx-6 sm:text-3xl md:text-4xl lg:text-3xl sm:text-center sm:mx-0">
-                    Practice Unlimited For Free
+                    Practice Unlimited For Free {percentageData.length}
                 </h3>
               
                 
@@ -81,7 +81,7 @@ function Percentage() {
                 <MathJaxContext>
                 {filteredQuestions.map((question, index) => (
           <div key={question.id}>
-            <div class="quiz-container">
+            <div class="quiz-container mb-10">
         <div class="question-numbercontainer"> 
         <p class="text-sm text-gray-300">Aptitude Questions<br/> Chapter: Quadratic Equations </p>                
         </div>                

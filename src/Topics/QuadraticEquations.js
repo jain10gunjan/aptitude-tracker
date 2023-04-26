@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import Aptitudelist from '../components/Aptitudelist';
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import { Helmet } from 'react-helmet';
-
+import Footer from '../components/Footer';
 
 function QuadraticEquation() {
   const [questions, setQuestions] = useState([]);
@@ -176,7 +176,7 @@ const pageValue="quadratic-equations"
 
     
       <Toaster position="top-left" reverseOrder={false} />
-      
+      <Footer/>
     </>
   );
 }
