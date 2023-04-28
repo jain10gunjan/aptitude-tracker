@@ -56,7 +56,7 @@ const QuadraticEquationQ = () => {
   
       <Helmet>
 
-      <title> {(percentageData[qid].question).slice(0, 15)} </title>
+      <title> {(percentageData[qid].question).slice(0, 90)} </title>
       <meta name="description" content={percentageData[qid].question}/>
       <meta name="keywords"content="Aptitude Questions, Placements preparation, Quadratic Equations Placements Questions, UPSC Quadratic Equations Questions."/>
       <meta name="robots" content="index, follow" />
@@ -67,7 +67,7 @@ const QuadraticEquationQ = () => {
   
       <MathJaxContext>
       <section class="text-gray-600 body-font relative">
-    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="container px-5 py-2 mx-auto flex sm:flex-nowrap flex-wrap">
       <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
       <div>
           <div class="question-numbercontainer"> 
@@ -111,7 +111,7 @@ const QuadraticEquationQ = () => {
                                </div>                
                                <div>                                     
                                   </div>              
-                                  <div class="questioncontainer answercontainer"><MathJax>{percentageData[qid].solution}</MathJax>  </div>                                
+                                  <div class="questioncontainer answercontainer">Solution: <MathJax>{percentageData[qid].solution}</MathJax>  </div>                                
                                   </div>
         </div>
       <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
@@ -149,7 +149,7 @@ const QuadraticEquationQ = () => {
                                   <Toaster/>
                                   <Footer/>
       </>
-    )
+    );
   }
 
 export default QuadraticEquationQ

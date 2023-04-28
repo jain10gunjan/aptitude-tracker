@@ -1,15 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import percentageData from '../Questions/timeandwork.json';
+import percentageData from '../Questions/percentage.json';
 import toast, { Toaster } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import { MathJax, MathJaxContext } from "better-react-mathjax";
+import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
-import Footer from '../components/Footer'
 
-const TimeandworkQ = () => {
-  let {qid} = useParams()
+
+const PercentageQ = () => {
+    let {qid} = useParams()
     let x = Math.floor((Math.random() * 10) + 1);
     let q1 = x;
     let q2 = x+1;
@@ -28,7 +29,7 @@ const TimeandworkQ = () => {
         {
           "@type": "AlignmentObject",
           "alignmentType": "educationalSubject",
-          "targetName": "Time and Work"
+          "targetName": "Percentage"
         }
       ],
       "hasPart": [
@@ -46,7 +47,7 @@ const TimeandworkQ = () => {
       ]
     };
   
-    const pageValue = 'time-and-work';
+    const pageValue = 'percentage';
     
       return (
         <>
@@ -58,7 +59,7 @@ const TimeandworkQ = () => {
   
         <title> {(percentageData[qid].question).slice(0, 90)} </title>
         <meta name="description" content={percentageData[qid].question}/>
-        <meta name="keywords"content="Aptitude Questions, Placements preparation, Time and Work Placements Questions, UPSC Time and Work  Questions."/>
+        <meta name="keywords"content="Aptitude Questions, Placements preparation, Percentage Placements Questions, UPSC Percentage  Questions."/>
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -71,7 +72,7 @@ const TimeandworkQ = () => {
         <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
         <div>
             <div class="question-numbercontainer"> 
-            <p class="text-sm text-gray-300">Aptitude Questions <br/>Chapter : Time and Work </p>                
+            <p class="text-sm text-gray-300">Aptitude Questions <br/>Chapter : Percentage </p>                
             </div>                
             <div class="questioncontainer">                     
             <MathJax>{percentageData[qid].question}</MathJax>                                      
@@ -150,6 +151,6 @@ const TimeandworkQ = () => {
                                     <Footer/>
         </>
       );
-  }
+}
 
-export default TimeandworkQ
+export default PercentageQ

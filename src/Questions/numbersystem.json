@@ -8,7 +8,7 @@
             "D": "None of the above"
         },
         "correct_option": "B",
-        "solution": "The numbers which can be found on the number line and include both rational and irrational numbers are known as real numbers. Almost any number which you can imagine is a real number."
+        "solution": "\\displaylines{The numbers which can be found on the number\\ line and include both rational and irrational numbers are known as real numbers. Almost any number which you can imagine is a real number.}"
     },
     {
         "question": "Between any two numbers, there are -",
